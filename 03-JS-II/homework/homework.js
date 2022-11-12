@@ -198,18 +198,34 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
+  let TablaDel_6 = [];
+  for (let i = 0; TablaDel_6 < 11; i++) {
+    TablaDel_6 * i;
+  }
+  return TablaDel_6;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero > 99 && numero < 1000) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var n = numero;
+  var i = 0;
+  do {
+    n = n + 5;
+    i = i + 1;
+  } while (i < 8);
+  return n;
 }
 
 
